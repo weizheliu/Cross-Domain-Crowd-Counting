@@ -14,10 +14,19 @@ One popular solution is to use synthetic data for training. Unfortunately, due t
 ![](./images/model.jpg)
 Figure 1: **Two-stage approach**. **Top:** During the first training stage, we use synthetic images, real images, and flipped versions of the latter. The network is trained to output the correct people density for the synthetic images and to classify the real images as being flipped or not. **Bottom:** During the second training stage, we use synthetic and real images. We run the previously trained network on the real images and treat the least uncertain people density estimates as pseudo labels. We then fine tune the network on both kinds of images and iterate the process.
 
+## Installation
+
+Please refer to this [page](https://github.com/nikitadurasov/masksembles) for the installation of [Masksembles](https://arxiv.org/abs/2012.08334).
+
+For other packages, please refer to this [page](https://github.com/weizheliu/People-Flows).
+
 
 ## Implementation
 
-Coming soon.
+Please refer to model.py
+
+## How to Use
+The code is managed in the same way as my previous work, please refer to this [code](https://github.com/weizheliu/People-Flows) for detailed information. You only need to replace the "model.py" file with the one attached here and update other info(model name, dataset etc.) accordingly.
 
 
 
@@ -40,6 +49,10 @@ year = {2022}
 }
 
 ``` 
+
+## Note
+
+I already left EPFL and therefore I'm not able to reach my previous code/data. This is a quick implementation based on my memory and I do not even have the machine/data to test it, if you find any bug/typo with this code, please let me know.
 
 
 ## Contact
